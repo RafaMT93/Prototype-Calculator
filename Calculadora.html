@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <!--
+            Calculadora criada utilizando prototipagem
+            Desenvolvido por Rafael de Moraes
+            E-mail: rafat93.rdm@outlook.com.br
+        -->
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Calculadora</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/css/bootstrap-tour.css">
+  <link rel="stylesheet" href="./CSS_Calculadora.css">
+
+</head>
+
+<body class="lightTheme">
+
+  <div class="container">
+
+    <span id="dataHora">
+      <i class="glyphicon glyphicon-calendar"></i> <span id="data"></span>
+      <br><i class="glyphicon glyphicon-time"></i> <span id="hora"></span>
+    </span>
+    <a class="btn btn-default" value="Modo Noturno" id="darkTheme">
+      <i class="glyphicon glyphicon-adjust"></i>
+    </a>
+
+    <br><br>
+
+    <div class="panel panel-default">
+
+      <div class="row">
+
+        <div class="col-6 col-sm-6">
+
+          <div id="n1">
+            <b>Número 1:</b>
+            <br><input type="number" id="numero1" placeholder="Insira um Número" class="form-control">
+          </div>
+          <br>
+          <div id="n2">
+            <b>Número 2:</b>
+            <br><input type="number" id="numero2" placeholder="Insira um Número" class="form-control">
+          </div>
+          <br>
+          <b>Resultado</b>
+          <input type="number" id="resultado" placeholder="Resultado" class="form-control">
+
+          <br><br>
+
+          <input type="submit" id="limpar" value="Limpar" class="btn btn-primary" title="Limpar">
+
+          <br><br>
+
+          <div class="input-group" style="width: 100%;">
+
+            <div class="botoes text-center">
+
+              <input type="submit" id="somar" value="+" class="btn btn-primary" title="Somar">
+
+              <input type="submit" id="subtrair" value="-" class="btn btn-primary" title="Subtrair">
+
+              <input type="submit" id="multiplicar" value="x" class="btn btn-primary" title="Multiplicar">
+
+              <input type="submit" id="dividir" value="÷" class="btn btn-primary" title="Dividir">
+
+              <input type="submit" id="porcentagem" value="%" class="btn btn-primary" title="Porcentagem">
+
+              <input type="submit" id="qtsPorcento" value="?%" class="btn btn-primary" title="Quantos porcento?">
+
+              <br><br>
+
+              <input type="submit" id="quadrado" value="²" class="btn btn-primary" title="Ao Quadrado">
+
+              <input type="submit" id="cubo" value="³" class="btn btn-primary" title="Ao Cubo">
+
+              <input type="submit" id="potenciacao" value="xʸ" class="btn btn-primary" title="Potenciação">
+
+              <br><br>
+
+              <input type="submit" id="raizQuadrada" value="√" class="btn btn-primary" title="Raiz Quadrada">
+
+              <input type="submit" id="raizCubica" value="³√" class="btn btn-primary" title="Raiz Cúbica">
+
+              <input type="submit" id="indiceRaiz" value="ˣ√" class="btn btn-primary" title="Raíz com Índice">
+              <br><br>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-6 col-sm-6">
+
+          <h3 class="text-center">
+            <b>Histórico</b>
+          </h3>
+
+          <div id="historico" class="jumbotron"></div>
+
+        </div>
+      </div>
+
+      <br><br>
+
+      <a type="submit" onclick="tour.start(true)" class="btn btn-primary" title="Tour de Navegação" style="width: 100%">
+
+        Clique aqui para navegar
+        <br>em nosso tour de navegação
+
+      </a>
+
+      <br><br>
+
+    </div>
+
+  </div>
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="Erro" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+
+      <div class="modal-content">
+
+        <div class="modal-body text-center">
+
+          Insira um número no campo <b>"Número 1"</b> ou no campo <b>"Número 2"</b> de acordo com o tipo de operação desejada!
+
+        </div>
+
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Entendi</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tour/0.11.0/js/bootstrap-tour.js"></script>
+  <script src="./Calculadora.js"></script>
+
+</body>
+
+</html>

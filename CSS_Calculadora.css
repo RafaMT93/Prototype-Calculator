@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;    
+}
+.panel{
+    padding: 20px;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+    width: 100%;
+    font-weight: bold;
+}
+#limpar{
+    float: right
+}
+.fechar{
+    float: right;
+}
+.historicoResultados{
+    float: left;
+}
+.historicoResultados:hover{
+    transition: 1s ease;
+    color: #01023d
+}
+.result:hover{
+    background-color: #cccccc;
+    border-radius: 10px;
+}
+#historico{
+    border-radius: 10px;
+    padding: 10px;
+}
+#historico::-webkit-scrollbar{
+    width: 5px;
+}
+#historico::-webkit-scrollbar-thumb{
+    -webkit-border-radius: 100%;
+    border-radius: 10%;
+}
+#darkTheme{
+    margin-top: 10px;
+    float: right;
+}
+.darktheme{
+    background-color: black;
+    transition: 1s ease;
+}
+.lightTheme{
+    background-color: lightgray;
+    transition: 1s ease;
+}
+#dataHora{
+    margin-top: 8px;
+    float: left;
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 15px;
+    font-weight: bold;
+}
