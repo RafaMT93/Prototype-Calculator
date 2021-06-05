@@ -1,3 +1,3 @@
 # Prototype-Calculator
 
-Calculator developed in study of prototyping in javascript language
+Calculator developed for study of prototyping in javascript language
