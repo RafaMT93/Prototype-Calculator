@@ -1,3 +1,3 @@
-# Prototype-Calculator
+<h1><b>Calculator</b></h1>
 
-Calculator developed for study of prototyping in javascript language
+<p>Calculator developed for study of prototyping in javascript language.</p>
